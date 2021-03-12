@@ -1,1 +1,1 @@
-# GOLDS-UFSC - Mechanical Project
+# FloripaSat-2 - Mechanical Project
