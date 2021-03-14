@@ -1,6 +1,6 @@
-# SpaceLab Document Template
+# FloripaSat-2 Mechanical Project Documentation
 
-This a LaTeX template to use in the SpaceLab projects.
+Documentation of the mechanical project of the FloripaSat-2 CubeSat.
 
 ## Dependencies
 
