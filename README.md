@@ -33,7 +33,7 @@
 </p>
 
 <p align="center">
-    <img width="70%" src="https://github.com/spacelab-ufsc/floripasat2-mechanical/blob/master/figures/exploded-view.png">
+    <img width="70%" src="https://github.com/spacelab-ufsc/floripasat2-mechanical/blob/master/outputs/exploded-view.png">
 </p>
 
 ## Overview
