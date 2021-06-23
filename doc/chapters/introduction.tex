@@ -24,8 +24,311 @@
 
 \chapter{Introduction} \label{ch:introduction}
 
-.
+The structure of FloripaSat-II has four main objectives, summarized below, that are incorporated on its design:
 
-\cite{test}, \cite{obdh2}
+\begin{itemize}
+	\item To support the loads and vibration along the entire life-cycle of the satellite, which includes every phase prior to the launch, the launch itself, and the operation of the CubeSat in space;
+	\item To keep all the parts of the CubeSat fastened at proper position during the launch and operation;
+	\item To serve as a conductive thermal path for heat transfer;
+	\item To provide access for assembly, integration and verification.
+\end{itemize}
 
-LEO\nomenclature{\textbf{LEO}}{\textit{Low Earth Orbit.}}
+The structure of FloripaSat-II bases on a 2U CubeSat, whose design was already flight proven in other missions, as for example (\textcolor{red}{XXX, XXXX}). The modular chassis allows for up to two 1-Unit stack of PCBs, or other modules, to be mounted inside the chassis, using the PC-104 standard and spacers attached to the structure. In addition, there are 4 slots in the middle section (one for each side), providing space for the interface boards. The ACS is mounted on the internal surfaces of the rails, while the solar panels and antennas are externally mounted, providing a complete mechanical solution.
+
+The material of all its parts is aluminum T6065 (\textcolor{red}{verificar}), except for the bolts and thread. This material presents good mechanical properties for space application, as weight, strength, fracture and fatigue resistance, thermal expansion and it ease for manufacturing \textcolor{red}{livro concurso}. The surfaces of the CubeSat in contact with the deployer are anodized and grind \textcolor{red}{como é retificar em ingles?} for proper and smooth ejection. The main views of the assembled structure is presented in \autoref{fig:structure_views}, as well as one exploded view.
+
+\textcolor{red}{colocar aqui um total de 5 imagens: 3 vistas principais da estrutura montada com as dimensões principais em mm (topo-100x100, lateral1-230x100, lateral2-230x100), 1 vista isometrica montada e 1 vista isometrica explodida.}
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.55\textwidth]{figure/mechanics/exploded_view.png}
+%		\caption{Exploded View of FloripaSat-I.}
+%		\label{fig:exploded_view}
+%	\end{center}
+%\end{figure}
+
+%An orthogonal reference frame is placed in the geometric center of the CubeSat \textcolor{red}{nao precisa ser no centro, mas dizer onde está}. The +X axis points towards the \textcolor{red}{colocar aqui algo que identifique, como por exemplo antena maior, placa de interface,... Verificar o CDS!!}, the +Y axis is towards \textcolor{red}{XXX} and the +Z axis is \textcolor{red}{XXX}.
+
+\section{Assembly}
+
+In this section, the assembly of structure, as well as critical parts that are attached to it, are detailed.
+
+\subsection{Structure}
+
+\subsection{Printed Circuit Boards}
+
+The structure has four \textcolor{red}{M??} threads on the bottom of each main module. Spacers fasten one PCB at the structure through its male \textcolor{red}{M??} thread, while its female \textcolor{red}{M??} is used by a set of another fours spacers to attach the next superior PCB. Figure \textcolor{red}{XXXX} shows it.
+
+\textcolor{red}{colocar aqui 1 figura da fixacao na parte de baixo. Obs.: acho q seria melhor uma vista "explodida"}
+
+The structure has four holes on the top of main module. The PCB is attached at the structure by \textcolor{red}{M??} bolts crossing the both the structure and PCB holes that are fastened in the female part of \textcolor{red}{M??}. Figure \textcolor{red}{XXXX} shows it.
+
+\textcolor{red}{colocar aqui 1 figura da fixacao na parte de cima. Obs.: acho q seria melhor uma vista "explodida"}
+
+Para finalizar, seria importante trazer uma visao superior com as cotas dos furos
+
+\subsection{Solar panels}
+
+The structure has a total of 10 main sides, according to Figure \textcolor{red}{XXXXX}. There are a total of four \textcolor{red}{holes or M?? threads} on each side to integrate the solar panels. descrever como fixa.
+
+\subsection{ACS}
+
+Eight new holes are added on ISIS structure to accommodate the hysteresis bars of ADCS. Four of them are on the vertical. These holes had to be made in a recessed way, in order for the bolts heads to fit inside the holes. This is important to allow the structure to slide smoothly in the deployer. The remaining bolts are on the bottom part of the cube and they do not interfere in the deployment. These modifications are indicated in \autoref{fig:new_holes}.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.8\textwidth]{figure/mechanics/new_holes.png}
+%		\caption{Structure.}
+%		\label{fig:new_holes}
+%	\end{center}
+%\end{figure}
+
+The holes were previously tested in two prototypes to find out where it would be the best positioning for the bars, and what dimensions they should have to provide a proper functioning, with minimum impact in the overall structure.
+
+\autoref{fig:holes_dimension} shows that after the hysteresis bars have been assembled, the screws M2X8 are recessed from the rails. 
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=1\textwidth]{figure/mechanics/hole_dimension.png}
+%		\caption{Detail of Recess for the Countersunk Screws of the ADCS.}
+%		\label{fig:holes_dimension}
+%	\end{center}
+%\end{figure}
+
+M2 nuts are used to fasten the bars. The hysteresis bars on the bottom do not require any recess, and for this reason four flat M2x8 screws are used. To fit in the structure, one side of nuts of the rails are cut by 0.5 mm, resulting in the shape shown in \autoref{fig:nut_cut}.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.10\textwidth]{figure/mechanics/nut_cut.png}
+%		\caption{The Detail on Nut.}
+%		\label{fig:nut_cut}
+%	\end{center}
+%\end{figure}
+
+Another ADCS component is the magnet, which is a cylindrical bar with magnetic properties. Its location should be opposite to the hysteresis bars and for this reason an aluminum device was machined to support the magnet at its position. To fasten the magnet holder at the structure, two bolts M3x14 and two nuts M3 are used. The magnet and its holder are shown in \autoref{fig:ima_fixador}.
+
+\autoref{fig:adcs_full} shows the position of hysteresis bars, as well as the magnet and its holder at the structure.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=1\textwidth]{figure/mechanics/ima_fixador.png}
+%		\caption{The Holder (left) and the Magnet (right).}
+%		\label{fig:ima_fixador}
+%	\end{center}
+%\end{figure}
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.9\textwidth]{figure/mechanics/adcs_full.png}
+%		\caption{ADCS Location in the Structure.}
+%		\label{fig:adcs_full}
+%	\end{center}
+%\end{figure}
+
+
+\subsection{Antenna}
+
+%daqui pra cima já copiei
+
+\subsection{Placas de interface externa}
+
+%In each PCB there are four holes to pass fasteners. The PCB in the lowest Z height is attached at the thread of the structure by a \textcolor{M?} spacer. The PCB in the highest Z is attached against the structure by a bolt crossing the structure+PCB and fastened with a spacer, both with \textcolor{red}{M?} threads. The intermediate PCBs are fastened against each other, and consequently at the structure, by spacers on their bottom and top. Figure \textcolor{red}{XXXXXX} shows these three situations.
+
+The Brazilian company USIPED is in charge of the build and delivery the structure. A picture of this structure can be seen in \autoref{fig:usiped-structure}.
+
+\textcolor{red}{é a mesma foto q tem hj no git}
+%\begin{figure}[!ht]
+%	\begin{center}
+%		\includegraphics[width=0.7\textwidth]{figures/usiped-2u-structure.jpg}
+%		\caption{2U CubeSat structure from Usiped.}
+%		\label{fig:usiped-structure}
+%	\end{center}
+%\end{figure}
+
+\section{Mechanisms}
+
+
+\subsection{Kill-switch}
+
+Two electronic switches have been implemented into the design as to allow for the (redundant) deployment detection of the CubeSat when it is deployed from the POD. This electronic microswitch can be used to prevent the satellite from starting up during launch as is required for all CubeSat launches and hence acts as a Kill-Switch. The Kill-Switch is the Panasonic AV4 microswitch (AV402461), as can be seen in \autoref{fig:av402461}.
+
+%\begin{figure}[!ht]
+%	\begin{center}
+%		\includegraphics[width=0.25\textwidth]{figures/av402461}
+%		\caption{Panasonic AV402461 Microswitch.}
+%		\label{fig:av402461}
+%	\end{center}
+%\end{figure}
+
+The Kill-Switch mechanism in the mechanical structure has combined the function of providing deployment and detection (\autoref{fig:kill-switch-installed}). The travel of the actual switch of the Kill-Switch itself is so short that the Kill-Switch could ``detect deployment'' of the CubeSat from the launch adapter simply due to launch vibrations. To overcome this issue the Kill-Switch has been rotated so that there is a positive obstruction in front of the switch which needs 8 mm of deployment before deployment can be detected with the Kill-Switch. In \autoref{fig:kill-switch-installed} the Kill-Switch parts are highlighted and the stowed and deployed configuration is shown.
+
+%\begin{figure}[!ht]
+%	\begin{center}
+%		\includegraphics[width=0.85\textwidth]{figures/kill-switch-installed}
+%		\caption{Kill-Switches installed in the mechanical structure.}
+%		\label{fig:kill-switch-installed}
+%	\end{center}
+%\end{figure}
+
+The contact arrangement of the microswitch and the current rating are detailed in \autoref{fig:circuit-kill-switch} and \autoref{tab:kill-switch-specs}.
+
+%\begin{figure}[!ht]
+%	\begin{center}
+%		\includegraphics[width=0.4\textwidth]{figures/circuit-kill-switch}
+%		\caption{The contact arrangement of the microswitch.}
+%		\label{fig:circuit-kill-switch}
+%	\end{center}
+%\end{figure}
+
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{lcccc}
+		\toprule[1.5pt]
+		\textbf{Characteristic} & \textbf{Minimum} & \textbf{Typical} & \textbf{Maximum} & \textbf{Unit} \\
+		\midrule
+		Switch Current                      & 2     & 50    & 100   & mA \\
+		DC Voltage across switch contacts   & n/a   & n/a   & 30    & V \\
+		Contact resistance microswitch      & n/a   & n/a   & 200   & m$\Omega$ \\
+		\bottomrule[1.5pt]
+	\end{tabular}
+	\caption{Kill-Switch current rating and voltage range.}
+	\label{tab:kill-switch-specs}
+\end{table}
+
+\textcolor{red}{colocar o tamanho dos parafusos e porcas que o prendem}
+
+The kill-switch was bought from ISIS Space as part of the structure. When they are not pressed, they standoff of two rails of the structure, as shown in \autoref{fig:ks_1}. However, when the structure is placed in the deployer, the two kill-switches are pressed, and they stay hidden inside the rails.
+
+Its mechanism includes an electromechanic switch, a knob, a spring, four bolts and two small sheets of aluminum, as indicated in \autoref{fig:ks_1} (left).
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.85\textwidth]{figure/mechanics/ks_1.png}
+%		\caption{Overview of the Kill-Switches and their Location.}
+%		\label{fig:ks_1}
+%	\end{center}
+%\end{figure}
+
+
+\subsection{Antenna deployment}
+
+To fit in typical commercial deployers, the CubeSat keeps its antenna constrained along the launch phase.
+After the launch of the CubeSat, proper separation from the launch vehicle and other satellites, the antenna has to be released to allow the communication. The antenna is enclosed in the top of the satellite and has a spring effect due to its material and circular closed-mode sustained by a wire. To release the antenna, an electrical sign enables the current flow through an electrical resistance that is in contact with the wire. After enough heating, the wire burns and the spring effect opens the antenna. This is a mechanism classified as "One-shot device".
+
+\textcolor{red}{aqui seria interessante trazer alguma imagem do datasheet}
+falar do mecanismo q diz q a antena esta aberta
+
+
+----------
+colocar no final uma vista do satelite montado e outra dele explodido
+
+
+\subsection{Battery Holder and Battery Board}
+Due to the inertial mass of batteries and the intense vibration during launch, a polymeric device was designed to provide better attachment of batteries to the structure. The component, shown in \autoref{fig:battery_holder}, has a design that follows the batteries shape, increasing the contact area. Its fixation is made by a M3 bolt under the Batteries PCB.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=1.0\textwidth]{figure/mechanics/holder_battery.png}
+%		\caption{Battery Holder.}
+%		\label{fig:battery_holder}
+%	\end{center}
+%\end{figure}
+
+During the first CubeDesign in 2018 \cite{Cubedesign_2018}, FloripaSat engineering model wen through random vibration tests, performed by INPE technicians at LIT. Using Falcon 9 Launcher Vehicle User's Guide, the battery holder was able to keep the batteries at their proper position and did not showed any visual signal of failure.
+
+The battery pack is connected to the structure through the EPS board, as shown in \autoref{fig:battery_eps_structure}. Four standoffs with length of 5 mm give appropriate displacement of the battery pack from EPS boards, and four M3x4 screws with four M3 nuts are used to attach both sub-systems.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=1.0\textwidth]{figure/mechanics/battery_eps_structure.png}
+%		\caption{Battery and EPS Boards in the Structure.}
+%		\label{fig:battery_eps_structure}
+%	\end{center}
+%\end{figure}
+
+\newpage
+
+\subsection{Stacked Configuration}
+Bolts are used to attach the boards to the structure and pairs of spacers and electrical insulators support the boards in the structure. Stainless hexagonal standoffs M3 are used to provide proper displacement between boards. Each board has four holes where the spacers pass through and connect them to the structure. \autoref{fig:standoff} shows the spacers used, where a total of four different sizes are used. The height, also shown in \autoref{fig:standoff}, differ due to size of electronic components of each board and the respective PC104 interface. All the standoffs have thread length of 5 mm, and a total of four with 6 mm, 12 of 10 mm, four of 12 mm and four of 15 mm are required. 
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.9\textwidth]{figure/mechanics/standoff.png}
+%		\caption{Sizes of Standoffs used on the Side of the Structure.}
+%		\label{fig:standoff}
+%	\end{center}
+%\end{figure}
+
+Also, 20 electrical insulator washers are mounted with the standoffs to avoid the passage of current. \autoref{fig:washer_insulator} presents a detailed view of the interface of EPS board with the standoffs and washer, compared to a view without the EPS.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.4\textwidth]{figure/mechanics/washer_insulator.png}
+%		\caption{EPS Board in Contact with Washer (left) and the Assembly without the EPS Board (right).}
+%		\label{fig:washer_insulator}
+%	\end{center}
+%\end{figure}
+
+Four M3x6 bolts attach the columns of standoff at the structure, at the +Z side of the satellite, as shown in \autoref{fig:bolt_standoff}.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.4\textwidth]{figure/mechanics/bolt_standoff.png}
+%		\caption{Connection of Standoff with the Structure.}
+%		\label{fig:bolt_standoff}
+%	\end{center}
+%\end{figure}
+
+\subsection{Interface Board}
+After the integration, the modules can be accessed only by the interface board, located near the -Z side of the satellite. Its final design, when integrated, supports the battery pack, solar panels connectors and its screws. Four M2x8 bolts and four nuts M2 attach the interface board to the structure. These are the same nuts and screws used in the integration of hysteresis bars at the bottom of the satellite, as seen in \autoref{fig:interface_structure}. 
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.6\textwidth]{figure/mechanics/interface_structure.png}
+%		\caption{The Connection of Interface Board with the Structure.}
+%		\label{fig:interface_structure}
+%	\end{center}
+%\end{figure}
+
+The interface connectors exceed the dimension of 100 mm, but are within the standard of maximum distance of 6.5 mm from laterals, as shown in \autoref{fig:interface_dimensions}.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.4\textwidth]{figure/mechanics/interface_dimensions.png}
+%		\caption{Distance of the Interface Pins.}
+%		\label{fig:interface_dimensions}
+%	\end{center}
+%\end{figure}
+
+
+\subsection{Full Assembly}
+
+The external surfaces are covered by six solar panels, as shown in \autoref{fig:assembly_full}. A total of 18 M3x12 bolts, 2 M3x14 bolts and 16 M3 nuts are used to attach the solar panels. This amount does not include the bolts that come with the antenna. Their position respect the requirement of maximum 6.5 mm above the 100 mm on each lateral. The M3x14 bolts, purple on \autoref{fig:assembly_full}, are used to fasten the solar panel at -Y with the structure and the magnet holder.  
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=0.75\textwidth]{figure/mechanics/assembly_full.png}
+%		\caption{Main Views of the Complete Structure.}
+%		\label{fig:assembly_full}
+%	\end{center}
+%\end{figure}
+
+The solar panel on side -Z is the last item to be mounted and, for this reason, it is not possible to insert nuts to fasten its bolts. Nevertheless, the threads in the holes of solar panel bolts must be enough to assure its proper fastening. Due to the position of interface board, four aluminum washers are machined to serve as support for the -Z solar panels, as observed in \autoref{fig:spacers_solar}.
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=1.0\textwidth]{figure/mechanics/spacers_solar.png}
+%		\caption{Assembly of the -Z Solar Panel.}
+%		\label{fig:spacers_solar}
+%	\end{center}
+%\end{figure}
+
+When fully assembled, FloripaSat follows the standard requirements of the mechanical parts and its sub-systems. The main view of the satellite with its opened antennas is shown in \autoref{fig:cubesat_full}. 
+
+%\begin{figure}[H]
+%	\begin{center}
+%		\includegraphics[width=1.0\textwidth]{figure/mechanics/cubesat_full.png}
+%		\caption{Main View of the CAD Model.}
+%		\label{fig:cubesat_full}
+%	\end{center}
+%\end{figure}
